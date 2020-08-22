@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+    <header>
+        <nav><a href="index.html">back HOME</a></nav>
+    </header>
+    <hr>
+    <main>
+        <form name="contact" method="POST" data-netlify="true" action="/thanks">
+            <p> <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </p>
+            <p> <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </p>
+            <p> <label for="phone">Tel:</label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+            <p> <label for="quantity">Age:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="99">
+            </p>
+            <p> <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            </p>
+            <p> <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </p>
+            <p> <label for="checkbox"> My favorite cuisine:</label><br><br>
+                <input type="checkbox" id="cuisinetype1" name="cuisinetype1" value="French">
+                <label for="cuisinetype1"> French</label><br>
+                <input type="checkbox" id="cuisinetype2" name="cuisinetype2" value="Italian">
+                <label for="cuisinetype2"> Italian</label><br>
+                <input type="checkbox" id="cuisinetype3" name="cuisinetype3" value="Spanish">
+                <label for="cuisinetype3"> Spanish</label><br>
+                <input type="checkbox" id="cuisinetype4" name="cuisinetype4" value="Spanish">
+                <label for="cuisinetype4"> Arabic</label><br>
+            </p>
+            <p> <label for="favcolor">Select your favorite color of shorts:</label>
+                <input type="color" id="favcolor" name="favcolor">
+            </p>
+            <p> <label for="biography"> Biographie:</label><br><br>
+                <textarea name="message" rows="10" cols="30">
+            </textarea>
+            </p>
+            <p> <label for="recipe-upload">Upload your favorite recipe:</label>
+                <input type="file" id="recipe-upload" name="recipe-upload">
+            </p>
+            <p> <label for="homepage">Add your homepage:</label>
+                <input type="url" id="homepage" name="homepage">
+            </p>
+            <p><input type="reset" value="Reset">
+            </p>
+            <p><input type="submit" value="Send">
+            </p>
+
+
+        </form>
+
+    </main>
+</body>
+
+</html>
